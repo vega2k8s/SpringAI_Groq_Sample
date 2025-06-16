@@ -1,4 +1,4 @@
-package com.example.groq.chat;
+package com.example.speingai.chat;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatResponse;

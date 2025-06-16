@@ -1,4 +1,4 @@
-package com.example.groq.prompt;
+package com.example.speingai.prompt;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.GetMapping;
