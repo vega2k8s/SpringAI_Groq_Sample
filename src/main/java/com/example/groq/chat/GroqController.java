@@ -1,4 +1,4 @@
-package com.example.groq.controller;
+package com.example.groq.chat;
 
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.chat.model.ChatResponse;
