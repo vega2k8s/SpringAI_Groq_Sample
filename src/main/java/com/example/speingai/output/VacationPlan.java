@@ -14,7 +14,7 @@ public class VacationPlan {
         this.chatClient = builder.build();
     }
 
-    @GetMapping("/vacation/unstructured")
+    @GetMapping("/api/vacation/unstructured")
     public String vacationUnstructured() {
         return chatClient.prompt()
                 //.user("What's a good vacation plan while I'm in Montreal CA for 4 days?")
@@ -35,7 +35,7 @@ public class VacationPlan {
 //                .entity(Itinerary.class);
 //    }
 
-    @GetMapping("/vacation/structured")
+    @GetMapping("/api/vacation/structured")
     public Itinerary vacationStructured(@RequestParam(value = "destination", defaultValue = "파리, 프랑스")
                                             String destination) {
         return chatClient.prompt()

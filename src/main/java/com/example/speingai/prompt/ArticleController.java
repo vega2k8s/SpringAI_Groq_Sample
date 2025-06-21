@@ -14,8 +14,9 @@ public class ArticleController {
         this.chatClient = builder.build();
     }
 
-    @GetMapping("/posts/new")
-    public String newPost(@RequestParam(value = "topic", defaultValue = "JDK Virtual Threads") String topic) {
+    @GetMapping("/api/posts/new")
+    public String newPost(@RequestParam(value = "topic", defaultValue = "JDK Virtual Threads")
+                              String topic) {
 
         // A system message in LLMs is a special type of input that provides high-level instructions, context, or behavioral
         // guidelines to the model before it processes user queries. Think of it as the "behind-the-scenes"
